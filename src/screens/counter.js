@@ -1,5 +1,7 @@
 import { View, Text, StyleSheet } from "react-native";
 import React, { useState } from "react";
+import Icon from "@expo/vector-icons/Ionicons";
+
 import { Button } from "../components/button";
 
 export default function Counter() {
@@ -17,12 +19,20 @@ export default function Counter() {
     <View style={styles.container}>
       <View style={styles.box}>
         <View>
-          <Button title={"+"} onPress={onAddPressed} />
+          <Button
+            title={"Ali"}
+            onPress={onAddPressed}
+            btnIcon={<Icon size={40} name="heart" color={"purple"} />}
+          />
         </View>
 
         <Text style={styles.CounterText}>{count}</Text>
         <View>
-          <Button title={"-"} onPress={onMinusPressed} />
+          <Button
+            title={"-"}
+            onPress={onMinusPressed}
+            btnIcon={<Icon size={40} name="home" color={"red"} />}
+          />
         </View>
       </View>
     </View>
