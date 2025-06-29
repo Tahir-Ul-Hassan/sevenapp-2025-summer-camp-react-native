@@ -20,7 +20,7 @@ export default function Counter() {
       <View style={styles.box}>
         <View>
           <Button
-            title={"Ali"}
+            title={"+"}
             onPress={onAddPressed}
             btnIcon={<Icon size={40} name="heart" color={"purple"} />}
           />
