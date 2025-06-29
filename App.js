@@ -1,5 +1,5 @@
-import Listing from "./src/screens/listing";
+import WhatsappStatus from "./src/screens/WhatsappStatus/whatsappStatus";
 
 export default function App() {
-  return <Listing />;
+  return <WhatsappStatus />;
 }

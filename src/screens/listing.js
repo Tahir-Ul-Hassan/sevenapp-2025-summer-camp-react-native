@@ -11,7 +11,7 @@ export default function Listing() {
   const data = [1, 2, 3, 4, 5];
 
   return (
-    <ScrollView horizontal={true}>
+    <ScrollView>
       {data.map((item) => (
         <ImageBackground
           style={styles.img}
@@ -26,7 +26,7 @@ export default function Listing() {
 
 const styles = StyleSheet.create({
   img: {
-    width: 300,
+    width: 360,
     height: 300,
   },
   textStyle: {
