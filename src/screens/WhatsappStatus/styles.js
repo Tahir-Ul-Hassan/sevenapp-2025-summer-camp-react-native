@@ -6,20 +6,19 @@ export const styles = StyleSheet.create({
   },
 
   headerText: {
-    fontSize: 40,
+    fontSize: 35,
     fontWeight: "bold",
   },
-  statusListing: {},
   statusListingHeading: {
     flexDirection: "row",
     justifyContent: "space-between",
   },
-  headerSIconContainer: {
+  headerSubIconContainer: {
     flexDirection: "row",
     gap: 10,
   },
   headerSubText: {
-    fontSize: 40,
+    fontSize: 30,
     fontWeight: "bold",
   },
 });

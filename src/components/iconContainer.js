@@ -1,7 +1,7 @@
+import React from "react";
 import { View, StyleSheet } from "react-native";
-export const iconContainer = ({ icon }) => {
-  return <View style={styles.Container}>{icon}</View>;
-};
+
+export default ({ icon }) => <View style={styles.headerIcon}>{icon}</View>;
 
 const styles = StyleSheet.create({
   headerIcon: {

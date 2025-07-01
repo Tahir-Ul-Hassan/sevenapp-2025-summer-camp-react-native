@@ -1,17 +1,15 @@
-import { View, Text, StyleSheet } from "react-native";
-import React from "react";
-
+import { View, Text } from "react-native";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 import Entypo from "@expo/vector-icons/Entypo";
 import Ionicons from "@expo/vector-icons/Ionicons";
-
+import IconContainer from "../../components/iconContainer";
 import { styles } from "./styles";
 
 export default function WhatsappStatus() {
   return (
     <View>
       <View style={styles.header}>
-        <iconContainer
+        <IconContainer
           icon={
             <MaterialCommunityIcons
               name="dots-horizontal"
@@ -26,10 +24,10 @@ export default function WhatsappStatus() {
           <View style={styles.statusListingHeading}>
             <Text style={styles.headerSubText}>Status</Text>
             <View style={styles.headerSubIconContainer}>
-              <iconContainer
+              <IconContainer
                 icon={<Entypo name="camera" size={24} color="black" />}
               />
-              <iconContainer
+              <IconContainer
                 icon={<Ionicons name="pencil" size={24} color="black" />}
               />
             </View>
