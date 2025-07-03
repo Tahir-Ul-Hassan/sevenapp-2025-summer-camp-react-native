@@ -10,10 +10,24 @@ export default function ConfettiButton() {
     }
   }
 
+  function onCheetahStopPressed() {
+    if (confettiRef) {
+      confettiRef.current.stop();
+    }
+  }
+
+  function onCheetahResumePressed() {
+    if (confettiRef) {
+      confettiRef.current.resume();
+    }
+  }
+
   return (
     <View ref={boxRef}>
       <Button onPress={onCheetahPressed} title={"chetah"} />
       <ConfettiCannon ref={confettiRef} count={200} origin={{ x: -10, y: 0 }} />
+      <Button onPress={onCheetahStopPressed} title={"chetah_Stop"} />
+      <Button onPress={onCheetahResumePressed} title={"chetah_resume"} />
     </View>
   );
 }
