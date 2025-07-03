@@ -1,4 +1,6 @@
+import { useNavigation } from "@react-navigation/native";
 import { StatusBar } from "expo-status-bar";
+import { useState } from "react";
 import {
   View,
   StyleSheet,
@@ -9,6 +11,13 @@ import {
 } from "react-native";
 
 export default function Login() {
+  const [Email, setEmail] = useState("");
+  const [Password, setPassword] = useState("");
+  const { navigate } = useNavigation();
+
+  function onLoginPress() {
+    navigate("whatsappStatus");
+  }
   return (
     <ImageBackground
       source={{
@@ -23,7 +32,7 @@ export default function Login() {
         secureTextEntry={true}
       />
       <View style={styles.Buttoncon}>
-        <Button title="Login" />
+        <Button title="Login" onPress={onLoginPress} />
       </View>
     </ImageBackground>
   );
