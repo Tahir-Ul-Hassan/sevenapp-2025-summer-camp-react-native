@@ -3,10 +3,11 @@ import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 import Entypo from "@expo/vector-icons/Entypo";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import IconContainer from "../../components/iconContainer";
+import ConfettiButton from "../../components/confettiButton";
 import { styles } from "./styles";
 
 export default function WhatsappStatus() {
-  const numericData = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+  const numericData = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   const _renderStatus = (item) => {
     return (
       <View style={styles.statusContainer}>
@@ -48,6 +49,7 @@ export default function WhatsappStatus() {
           />
         </View>
       </View>
+      <ConfettiButton />
     </View>
   );
 }

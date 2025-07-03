@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     borderRadius: 50,
   },
   buttonText: {
-    fontSize: 60,
+    fontSize: 30,
   },
 });
 

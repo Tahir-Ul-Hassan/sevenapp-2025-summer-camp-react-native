@@ -18,7 +18,7 @@ export const styles = StyleSheet.create({
     gap: 10,
   },
   headerSubText: {
-    fontSize: 30,
+    fontSize: 24,
     fontWeight: "bold",
   },
   statusContainer: {
